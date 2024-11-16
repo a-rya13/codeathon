@@ -1,0 +1,57 @@
+Shopping Mall Management System   
+
+This project was developed during a college hackathon. It is a fully functional  e-commerce web application  built in just  1 day  as part of a collaborative team effort.  
+
+   Overview   
+The application allows users to browse items, add them to a cart, and place orders. It includes both  frontend  and  backend  implementations with database integration for smooth functionality.  
+   Features   
+
+    Frontend Development   
+- Designed user-friendly and responsive interfaces using  HTML ,  CSS , and  JSP (JavaServer Pages) .  
+- Key pages include:  
+  -  index.html : Landing page of the application.  
+  -  cart.jsp : Displays selected items for purchase.  
+  -  shop.jsp : Shows available products.  
+  -  user_sign_up.jsp : User registration form.  
+
+    Backend Development   
+- Built a robust backend using  Java  with the  DAO (Data Access Object) pattern  for abstraction and modularity.  
+- Key backend components:  
+  -  DAO Classes :  
+    -  adminDAO.java ,  itemDAO.java ,  userDAO.java  for handling database queries and logic.  
+  -  Servlets :  
+    -  OrderServlet.java : Handles order placement and processing.  
+    -  logout.java : Manages user sessions and logout functionality.  
+
+    Database Integration   
+- Managed database connectivity using  JDBC  and  ConnectionDB.java .  
+- Key functionalities include:  
+  - User authentication and registration.  
+  - Order placement and tracking.  
+  - Inventory updates.  
+
+    Configuration and Deployment   
+- Configured servlets and deployment descriptors using  web.xml .  
+- Deployed on  GlassFish Server  for testing and hosting.  
+
+   Technologies Used   
+-  Frontend : HTML, CSS, JSP  
+-  Backend : Java (Servlets), JDBC  
+-  Database : MySQL (or similar RDBMS)  
+-  Server : GlassFish  
+ 
+
+1. Clone the repository:  
+      bash
+   git clone https://github.com/a-rya13/codeathon.git
+        
+
+2. Import the project into your IDE (e.g., NetBeans or Eclipse).  
+
+3. Configure the database:  
+   - Update database credentials in  ConnectionDB.java .  
+   - Import the SQL file (if provided) to set up the required schema and tables.  
+
+4. Deploy the project on a GlassFish Server.  
+
+5. Access the application in your browser at  http://localhost:<PORT>.  
